@@ -59,3 +59,6 @@ export default function TerminalTyping({ lines = defaultLines, className = "" })
     </motion.div>
   );
 }
+
+
+// kjlafjj
