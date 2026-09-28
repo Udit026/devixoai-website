@@ -1275,7 +1275,7 @@ export default function Home() {
         <div className="section relative flex flex-col items-center pb-16 pt-20 text-center md:pt-28">
           <Reveal>
             <span className="mb-5 inline-flex items-center gap-2 rounded-full border border-saffron-500/30 bg-saffron-500/10 px-4 py-1.5 text-xs font-medium text-saffron-400">
-              🚀 AI-Powered SaaS Solutions
+               AI-Powered SaaS Solutions
             </span>
           </Reveal>
           <Reveal delay={0.1}>
