@@ -1,3 +1,5 @@
+// ye dark theme k liye hai 
+
 // import { useEffect, useRef } from "react";
 
 // // Canvas-based neural-network background: floating nodes connected by thin
