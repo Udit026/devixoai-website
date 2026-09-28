@@ -1222,10 +1222,10 @@ import CTAStrip from "../components/CTAStrip";
 import Counter from "../components/Counter";
 import Marquee from "../components/Marquee";
 import RotatingWord from "../components/RotatingWord";
-import NeuralBackground from "../components/Neuralbackground";
-import TerminalTyping from "../components/Terminaltyping";
+import NeuralBackground from "../components/NeuralBackground";
+import TerminalTyping from "../components/TerminalTyping";
 import TiltCard from "../components/TiltCard";
-import MagneticButton from "../components/Magneticbutton";
+import MagneticButton from "../components/MagneticButton";
 
 const integrations = ["Slack", "Microsoft", "Google", "Notion", "Zapier", "AWS", "HubSpot", "Stripe"];
 
@@ -1382,9 +1382,8 @@ export default function Home() {
                   key={img}
                   onClick={() => setImgIndex(i)}
                   aria-label={`Show slide ${i + 1}`}
-                  className={`h-1.5 rounded-full transition-all duration-300 ${
-                    i === imgIndex ? "w-6 bg-saffron-500" : "w-1.5 bg-ink-600"
-                  }`}
+                  className={`h-1.5 rounded-full transition-all duration-300 ${i === imgIndex ? "w-6 bg-saffron-500" : "w-1.5 bg-ink-600"
+                    }`}
                 />
               ))}
             </div>
@@ -1413,6 +1412,14 @@ export default function Home() {
 
       {/* IMAGE + TEXT: insights */}
       <section className="section grid items-center gap-12 md:grid-cols-2">
+        {/* <Reveal>
+          <img
+            src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=900&q=60"
+            alt="Team analyzing business data"
+            className="aspect-[4/3] w-full rounded-2xl border border-ink-700 object-cover shadow-card"
+          />
+        </Reveal>
+        <Reveal delay={0.1}> */}
         <Reveal>
           <img
             src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=900&q=60"
@@ -1420,7 +1427,7 @@ export default function Home() {
             className="aspect-[4/3] w-full rounded-2xl border border-ink-700 object-cover shadow-card"
           />
         </Reveal>
-        <Reveal delay={0.1}>
+        <Reveal delay={0.35}>
           <h2 className="text-3xl font-bold md:text-4xl">Convert Your Data into Meaningful Insights</h2>
           <p className="mt-4 text-offwhite/60">
             Gain precise insights for your business with our advanced AI analytics engine.
@@ -1440,7 +1447,7 @@ export default function Home() {
       </section>
 
       {/* IMAGE + TEXT: reversed on desktop */}
-      <section className="section grid items-center gap-12 !pt-0 md:grid-cols-2">
+      {/* <section className="section grid items-center gap-12 !pt-0 md:grid-cols-2">
         <Reveal className="order-2 md:order-1">
           <h2 className="text-3xl font-bold md:text-4xl">Upgrade Your Business with Our AI Suite</h2>
           <div className="mt-6 space-y-6">
@@ -1468,8 +1475,37 @@ export default function Home() {
             className="aspect-[4/3] w-full rounded-2xl border border-ink-700 object-cover shadow-card"
           />
         </Reveal>
+      </section> */}
+      {/* IMAGE + TEXT: reversed on desktop */}
+      <section className="section grid items-center gap-12 !pt-0 md:grid-cols-2">
+        <Reveal delay={0.35} className="order-2 md:order-1">
+          <h2 className="text-3xl font-bold md:text-4xl">Upgrade Your Business with Our AI Suite</h2>
+          <div className="mt-6 space-y-6">
+            {[
+              { icon: HiOutlineCpuChip, title: "Smart Task Management", desc: "Effortlessly organize, plan and track work with AI-assisted tools." },
+              { icon: HiOutlineBolt, title: "Real-Time Collaboration", desc: "Work with your team, share updates instantly and stay in sync." },
+              { icon: HiOutlineChartBar, title: "Instant Notifications", desc: "Get real-time alerts for important updates so nothing slips through." },
+            ].map((f) => (
+              <div key={f.title} className="flex gap-4">
+                <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-saffron-500/10 text-xl text-saffron-500">
+                  <f.icon />
+                </div>
+                <div>
+                  <h3 className="font-semibold">{f.title}</h3>
+                  <p className="mt-1 text-sm text-offwhite/60">{f.desc}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </Reveal>
+        <Reveal className="order-1 md:order-2">
+          <img
+            src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=900&q=60"
+            alt="Person using AI-powered dashboard"
+            className="aspect-[4/3] w-full rounded-2xl border border-ink-700 object-cover shadow-card"
+          />
+        </Reveal>
       </section>
-
       {/* FEATURES GRID — with hover-tilt */}
       <section className="section">
         <Reveal className="mx-auto max-w-2xl text-center">
@@ -1534,7 +1570,7 @@ export default function Home() {
           </p>
         </Reveal>
       </section>
-{/* kjljkjlj */}
+      {/* kjljkjlj */}
       <CTAStrip />
     </>
   );

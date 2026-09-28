@@ -36,5 +36,3 @@ export default function MagneticButton({ children, strength = 0.35, className = 
     </motion.div>
   );
 } 
-
-// hkajlkdslak

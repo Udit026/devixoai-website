@@ -51,4 +51,3 @@ export default function TiltCard({ children, className = "", maxTilt = 8 }) {
   );
 }
 
-// jkhakddsafj
