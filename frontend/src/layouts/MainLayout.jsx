@@ -1,5 +1,20 @@
+// import Navbar from "../components/Navbar";
+// import Footer from "../components/Footer";
+
+// export default function MainLayout({ children }) {
+//   return (
+//     <div className="flex min-h-screen flex-col overflow-x-hidden">
+//       <Navbar />
+//       <main className="flex-1">{children}</main>
+//       <Footer />
+//     </div>
+//   );
+// }
+
+
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import ScrollToTop from "../components/ScrollToTop";
 
 export default function MainLayout({ children }) {
   return (
@@ -7,6 +22,7 @@ export default function MainLayout({ children }) {
       <Navbar />
       <main className="flex-1">{children}</main>
       <Footer />
+      <ScrollToTop />
     </div>
   );
 }
