@@ -163,7 +163,7 @@ const services = [
     number: "02",
     title: "Custom Software Development",
     desc: "Scalable, secure, and high-performance applications built from the ground up. From robust cloud backends (C#, .NET, and secure databases) to sleek, responsive front-ends (React, Mobile iOS/Android), we build software that lasts.",
-    tags: ["C#", ".NET", "Secure Databases", "React", "iOS", "Android"],
+    tags: ["C#", ".NET", "Secure Databases", "React", "iOS", "Node js", "Android"],
     img: "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?fm=jpg&q=60&w=900&auto=format&fit=crop",
   },
   {

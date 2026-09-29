@@ -2622,7 +2622,7 @@ export default function Home() {
           <Reveal delay={0.3} className="mt-8 flex flex-col gap-4 sm:flex-row">
             <MagneticButton>
               <Link to="/services" className="btn-primary">
-                Explore Our Solutions <HiArrowUpRight />
+                Explore Our Services <HiArrowUpRight />
               </Link>
             </MagneticButton>
             <MagneticButton>

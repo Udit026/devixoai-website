@@ -17,7 +17,7 @@ const pagesLinks = [
   { name: "Services", path: "/services" },
   { name: "Integration", path: "/integration" },
   { name: "FAQ's & Answer", path: "/faq" },
-  { name: "Blog Details", path: "/blog/1" },
+  // { name: "Blog Details", path: "/blog/1" },
   { name: "Login", path: "/login" },
   { name: "Register", path: "/register" },
 ];
