@@ -2473,6 +2473,7 @@ import NeuralBackground from "../components/NeuralBackground";
 import TerminalTyping from "../components/TerminalTyping";
 import TiltCard from "../components/TiltCard";
 import MagneticButton from "../components/MagneticButton";
+import AuroraBackground from "../components/AuroraBackground";
 
 const integrations = ["Slack", "Microsoft", "Google", "Notion", "Zapier", "AWS", "HubSpot", "Stripe"];
 
@@ -2580,10 +2581,10 @@ export default function Home() {
   return (
     <>
       {/* HERO */}
-      <section className="relative overflow-hidden bg-saffron-glow">
+          <section className="relative overflow-hidden bg-saffron-glow">
+        <AuroraBackground />
         {/* Deeper orange so the network stays visible on a white background */}
         <NeuralBackground color="230, 115, 0" />
-
         <div className="section relative flex flex-col items-center pb-16 pt-20 text-center md:pt-28">
           <Reveal>
             <span className="mb-5 inline-flex items-center gap-2 rounded-full border border-saffron-500/30 bg-saffron-500/10 px-4 py-1.5 text-xs font-medium text-saffron-400">
